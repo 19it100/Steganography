@@ -6,8 +6,8 @@ public class EmbedText
     public static BufferedImage embed(BufferedImage originalImage, String text)
     {
         int x = 0, y = 0, asciiValue;//x= x coordinate, y=y coordinate of image starting from top left .
-        final int EXTRACTOR = 00000001;//BitMask to extract last bit of character.
-        final int ZEROATLAST= 0xfffffffe;
+        final int EXTRACTOR = 1;//BitMask to extract last bit of character.
+        final int ZEROATLAST= -2;
         for (int i = 0; i <= text.length(); i++)
         {
             if (i < text.length())

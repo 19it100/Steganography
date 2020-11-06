@@ -6,8 +6,8 @@ public class ExtractText
     public static StringBuilder extract(BufferedImage encryptedImage)
     {
         int x = 0, y = 0, bitValue;
-        final int EXTRACTOR = 0x00000001;
-        final int ONEATSTART=0x80;
+        final int EXTRACTOR = 1;
+        final int ONEATSTART= 128;
         char chars;
         int asciiCode = 0;
         StringBuilder stringBuilder = new StringBuilder();
